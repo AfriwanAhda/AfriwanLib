@@ -15,6 +15,7 @@
 		62FCCCBE22C355F800380E31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62FCCCBC22C355F800380E31 /* Main.storyboard */; };
 		62FCCCC022C355FA00380E31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62FCCCBF22C355FA00380E31 /* Assets.xcassets */; };
 		62FCCCC322C355FA00380E31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62FCCCC122C355FA00380E31 /* LaunchScreen.storyboard */; };
+		62FCCCC922C35B8A00380E31 /* GeneralLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCCCC822C35B8A00380E31 /* GeneralLib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		62FCCCBF22C355FA00380E31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62FCCCC222C355FA00380E31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		62FCCCC422C355FA00380E31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62FCCCC822C35B8A00380E31 /* GeneralLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralLib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			children = (
 				62FCCC8522C3548D00380E31 /* AfriwanLib.h */,
 				62FCCC8622C3548D00380E31 /* Info.plist */,
+				62FCCCC822C35B8A00380E31 /* GeneralLib.swift */,
 			);
 			path = AfriwanLib;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				TargetAttributes = {
 					62FCCC8122C3548D00380E31 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					62FCCC8A22C3548D00380E31 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -260,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62FCCCC922C35B8A00380E31 /* GeneralLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +440,7 @@
 		62FCCC9722C3548D00380E31 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -452,6 +458,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = diponten.AfriwanLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -460,6 +467,7 @@
 		62FCCC9822C3548D00380E31 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -485,6 +493,7 @@
 		62FCCC9A22C3548D00380E31 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WY794SNHMU;
 				INFOPLIST_FILE = AfriwanLibTests/Info.plist;
@@ -503,6 +512,7 @@
 		62FCCC9B22C3548D00380E31 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WY794SNHMU;
 				INFOPLIST_FILE = AfriwanLibTests/Info.plist;
