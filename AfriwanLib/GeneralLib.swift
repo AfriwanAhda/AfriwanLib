@@ -8,11 +8,6 @@
 
 import Foundation
 
-public final class GeneralLib {
-    
-    
-    public func genAd(a: Int, b: Int) -> Int {
-        return a + b
-    }
-
+public func genAd(a: Int, b: Int) -> Int {
+    return a + b
 }
