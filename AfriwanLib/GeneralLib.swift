@@ -11,7 +11,7 @@ import Foundation
 public final class GeneralLib {
     
     
-    public func add(a: Int, b: Int) -> Int {
+    public func genAd(a: Int, b: Int) -> Int {
         return a + b
     }
 
