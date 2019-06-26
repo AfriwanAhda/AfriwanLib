@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "AfriwanLib"
-  spec.version      = "0.1"
+  spec.version      = "0.2"
   spec.summary      = "General CocoaPods library written in Swift"
 
   # This description is used to generate tags and improve search results.
