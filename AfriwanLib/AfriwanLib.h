@@ -2,7 +2,7 @@
 //  AfriwanLib.h
 //  AfriwanLib
 //
-//  Created by Renom on 26/06/19.
+//  Created by Afriwan Ahda on 26/06/19.
 //  Copyright © 2019 AfriwanAhda. All rights reserved.
 //
 

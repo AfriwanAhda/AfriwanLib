@@ -10,6 +10,11 @@
 		62FCCC8C22C3548D00380E31 /* AfriwanLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62FCCC8222C3548D00380E31 /* AfriwanLib.framework */; };
 		62FCCC9122C3548D00380E31 /* AfriwanLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCCC9022C3548D00380E31 /* AfriwanLibTests.swift */; };
 		62FCCC9322C3548D00380E31 /* AfriwanLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 62FCCC8522C3548D00380E31 /* AfriwanLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62FCCCB922C355F800380E31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCCCB822C355F800380E31 /* AppDelegate.swift */; };
+		62FCCCBB22C355F800380E31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCCCBA22C355F800380E31 /* ViewController.swift */; };
+		62FCCCBE22C355F800380E31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62FCCCBC22C355F800380E31 /* Main.storyboard */; };
+		62FCCCC022C355FA00380E31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62FCCCBF22C355FA00380E31 /* Assets.xcassets */; };
+		62FCCCC322C355FA00380E31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62FCCCC122C355FA00380E31 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +34,13 @@
 		62FCCC8B22C3548D00380E31 /* AfriwanLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AfriwanLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		62FCCC9022C3548D00380E31 /* AfriwanLibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfriwanLibTests.swift; sourceTree = "<group>"; };
 		62FCCC9222C3548D00380E31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62FCCCB622C355F800380E31 /* AfriwanLibExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AfriwanLibExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		62FCCCB822C355F800380E31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		62FCCCBA22C355F800380E31 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		62FCCCBD22C355F800380E31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		62FCCCBF22C355FA00380E31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		62FCCCC222C355FA00380E31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		62FCCCC422C355FA00380E31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +59,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		62FCCCB322C355F800380E31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -55,6 +74,7 @@
 			children = (
 				62FCCC8422C3548D00380E31 /* AfriwanLib */,
 				62FCCC8F22C3548D00380E31 /* AfriwanLibTests */,
+				62FCCCB722C355F800380E31 /* AfriwanLibExamples */,
 				62FCCC8322C3548D00380E31 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +84,7 @@
 			children = (
 				62FCCC8222C3548D00380E31 /* AfriwanLib.framework */,
 				62FCCC8B22C3548D00380E31 /* AfriwanLibTests.xctest */,
+				62FCCCB622C355F800380E31 /* AfriwanLibExamples.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,6 +105,19 @@
 				62FCCC9222C3548D00380E31 /* Info.plist */,
 			);
 			path = AfriwanLibTests;
+			sourceTree = "<group>";
+		};
+		62FCCCB722C355F800380E31 /* AfriwanLibExamples */ = {
+			isa = PBXGroup;
+			children = (
+				62FCCCB822C355F800380E31 /* AppDelegate.swift */,
+				62FCCCBA22C355F800380E31 /* ViewController.swift */,
+				62FCCCBC22C355F800380E31 /* Main.storyboard */,
+				62FCCCBF22C355FA00380E31 /* Assets.xcassets */,
+				62FCCCC122C355FA00380E31 /* LaunchScreen.storyboard */,
+				62FCCCC422C355FA00380E31 /* Info.plist */,
+			);
+			path = AfriwanLibExamples;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +170,23 @@
 			productReference = 62FCCC8B22C3548D00380E31 /* AfriwanLibTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		62FCCCB522C355F800380E31 /* AfriwanLibExamples */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62FCCCC522C355FA00380E31 /* Build configuration list for PBXNativeTarget "AfriwanLibExamples" */;
+			buildPhases = (
+				62FCCCB222C355F800380E31 /* Sources */,
+				62FCCCB322C355F800380E31 /* Frameworks */,
+				62FCCCB422C355F800380E31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AfriwanLibExamples;
+			productName = AfriwanLibExamples;
+			productReference = 62FCCCB622C355F800380E31 /* AfriwanLibExamples.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -152,6 +203,9 @@
 					62FCCC8A22C3548D00380E31 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
+					62FCCCB522C355F800380E31 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
 				};
 			};
 			buildConfigurationList = 62FCCC7C22C3548D00380E31 /* Build configuration list for PBXProject "AfriwanLib" */;
@@ -160,6 +214,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 62FCCC7822C3548D00380E31;
 			productRefGroup = 62FCCC8322C3548D00380E31 /* Products */;
@@ -168,6 +223,7 @@
 			targets = (
 				62FCCC8122C3548D00380E31 /* AfriwanLib */,
 				62FCCC8A22C3548D00380E31 /* AfriwanLibTests */,
+				62FCCCB522C355F800380E31 /* AfriwanLibExamples */,
 			);
 		};
 /* End PBXProject section */
@@ -184,6 +240,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62FCCCB422C355F800380E31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62FCCCC322C355FA00380E31 /* LaunchScreen.storyboard in Resources */,
+				62FCCCC022C355FA00380E31 /* Assets.xcassets in Resources */,
+				62FCCCBE22C355F800380E31 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +271,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		62FCCCB222C355F800380E31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62FCCCBB22C355F800380E31 /* ViewController.swift in Sources */,
+				62FCCCB922C355F800380E31 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -214,6 +289,25 @@
 			targetProxy = 62FCCC8D22C3548D00380E31 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		62FCCCBC22C355F800380E31 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62FCCCBD22C355F800380E31 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		62FCCCC122C355FA00380E31 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62FCCCC222C355FA00380E31 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		62FCCC9422C3548D00380E31 /* Debug */ = {
@@ -424,6 +518,42 @@
 			};
 			name = Release;
 		};
+		62FCCCC622C355FA00380E31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WY794SNHMU;
+				INFOPLIST_FILE = AfriwanLibExamples/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = diponten.AfriwanLibExamples;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		62FCCCC722C355FA00380E31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WY794SNHMU;
+				INFOPLIST_FILE = AfriwanLibExamples/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = diponten.AfriwanLibExamples;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -450,6 +580,15 @@
 			buildConfigurations = (
 				62FCCC9A22C3548D00380E31 /* Debug */,
 				62FCCC9B22C3548D00380E31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62FCCCC522C355FA00380E31 /* Build configuration list for PBXNativeTarget "AfriwanLibExamples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62FCCCC622C355FA00380E31 /* Debug */,
+				62FCCCC722C355FA00380E31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
