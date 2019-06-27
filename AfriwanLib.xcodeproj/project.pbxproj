@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		624C86E322C4A6F4002433B0 /* AfriwanLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62FCCC8222C3548D00380E31 /* AfriwanLib.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		62FCCC8C22C3548D00380E31 /* AfriwanLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62FCCC8222C3548D00380E31 /* AfriwanLib.framework */; };
 		62FCCC9122C3548D00380E31 /* AfriwanLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCCC9022C3548D00380E31 /* AfriwanLibTests.swift */; };
 		62FCCC9322C3548D00380E31 /* AfriwanLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 62FCCC8522C3548D00380E31 /* AfriwanLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -65,12 +66,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				624C86E322C4A6F4002433B0 /* AfriwanLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		624C86E222C4A6F4002433B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		62FCCC7822C3548D00380E31 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +87,7 @@
 				62FCCC8F22C3548D00380E31 /* AfriwanLibTests */,
 				62FCCCB722C355F800380E31 /* AfriwanLibExamples */,
 				62FCCC8322C3548D00380E31 /* Products */,
+				624C86E222C4A6F4002433B0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
