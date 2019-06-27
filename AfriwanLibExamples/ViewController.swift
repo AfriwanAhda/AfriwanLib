@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import AfriwanLib
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var lb_test: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        lb_test.text = String(genAd(a: 2, b: 7))
     }
 
 
