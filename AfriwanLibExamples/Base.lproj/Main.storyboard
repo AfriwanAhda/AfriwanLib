@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.15"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="iOS 13.0 system colors" minToolsVersion="11.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,43 +17,66 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hik-JI-XLd">
-                                <rect key="frame" x="113" y="259" width="95" height="50"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zwb-Cp-Xft">
-                                <rect key="frame" x="76" y="130" width="168" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ond-rt-fRI">
+                                <rect key="frame" x="85" y="234" width="150" height="100"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="DIe-a7-JTB"/>
+                                    <constraint firstAttribute="height" constant="100" id="fME-8H-Evc"/>
+                                </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYf-95-kWK">
-                                <rect key="frame" x="89" y="345" width="95" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I90-3f-6FE">
+                                <rect key="frame" x="100" y="404" width="120" height="120"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Orange View" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19X-rO-3BS">
+                                        <rect key="frame" x="12" y="20" width="96" height="80"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstItem="19X-rO-3BS" firstAttribute="leading" secondItem="I90-3f-6FE" secondAttribute="leading" constant="12" id="DgE-ew-nN1"/>
+                                    <constraint firstAttribute="trailing" secondItem="19X-rO-3BS" secondAttribute="trailing" constant="12" id="KOe-vR-OnS"/>
+                                    <constraint firstAttribute="height" constant="120" id="cl2-Vb-6J0"/>
+                                    <constraint firstItem="19X-rO-3BS" firstAttribute="top" secondItem="I90-3f-6FE" secondAttribute="top" constant="20" id="euA-wI-teQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="19X-rO-3BS" secondAttribute="bottom" constant="20" id="h7O-jK-nVT"/>
+                                    <constraint firstAttribute="width" secondItem="I90-3f-6FE" secondAttribute="height" multiplier="1:1" id="tzt-iC-6xT"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oke-k8-sSs">
+                                <rect key="frame" x="60" y="64" width="200" height="100"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Sbt-lI-mzQ"/>
+                                    <constraint firstAttribute="width" secondItem="Oke-k8-sSs" secondAttribute="height" multiplier="2:1" id="TwE-Tj-F1h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Blue Button">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJa-RF-VMr">
-                                <rect key="frame" x="113" y="451" width="117" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Green View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVi-H6-IaE">
+                                <rect key="frame" x="108" y="271.5" width="104.5" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="hik-JI-XLd" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ScP-lf-LD0"/>
-                            <constraint firstItem="hik-JI-XLd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="aGW-xv-CWP"/>
+                            <constraint firstItem="ond-rt-fRI" firstAttribute="top" secondItem="Oke-k8-sSs" secondAttribute="bottom" constant="70" id="5RZ-1T-4kd"/>
+                            <constraint firstItem="ond-rt-fRI" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="GYM-ia-i0k"/>
+                            <constraint firstItem="I90-3f-6FE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ixa-ra-iwh"/>
+                            <constraint firstItem="I90-3f-6FE" firstAttribute="top" secondItem="ond-rt-fRI" secondAttribute="bottom" constant="70" id="aOn-TZ-kNB"/>
+                            <constraint firstItem="LVi-H6-IaE" firstAttribute="centerX" secondItem="ond-rt-fRI" secondAttribute="centerX" id="aYl-Xq-hd0"/>
+                            <constraint firstItem="Oke-k8-sSs" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="agh-n7-f3C"/>
+                            <constraint firstItem="LVi-H6-IaE" firstAttribute="centerY" secondItem="ond-rt-fRI" secondAttribute="centerY" id="eg2-sT-upK"/>
+                            <constraint firstItem="ond-rt-fRI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="owA-5v-Uso"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="button_test" destination="oYf-95-kWK" id="Gsn-Cu-gH2"/>
-                        <outlet property="lb_test" destination="hik-JI-XLd" id="NT6-Uv-OTk"/>
-                        <outlet property="view_test" destination="zwb-Cp-Xft" id="bBc-QS-lFZ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
