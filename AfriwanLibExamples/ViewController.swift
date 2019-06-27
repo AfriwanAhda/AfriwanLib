@@ -11,23 +11,43 @@ import AfriwanLib
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var button_blue: UIButton!
+    @IBOutlet weak var view_green: UIView!
+    @IBOutlet weak var view_orange: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
     }
     
     private func setupView() {
-        //        roundCorner(view: view_test, cornerRadius: 15)
-        ////        roundCorner(view: view_test, cornerRadius: 15, shadowOpacity: 0.3, shadowRadius: 2.0, shadowOffset: CGSize.init(width: 0, height: 1), masksToBounds: false)
-        //
-        //        roundCorner(view: button_test, cornerRadius: button_test.frame.height/2)
-        ////        roundCorner(view: button_test, cornerRadius: 20, shadowOpacity: 0.7, masksToBounds: true)
-        //
-        ////        pulsate(view: view_test)
-        ////        pulsate(view: button_test)
-        //
-        //        shake(view: view_test)
-        //        flash(view: button_test)
+        // Simple round corner
+        roundCorner(view: button_blue, cornerRadius: 15)
+        
+        // Custom round corner with full parameter
+        roundCorner(view: view_green, cornerRadius: 30, shadowOpacity: 0.4, shadowRadius: 2.5, shadowOffset: CGSize.init(width: 1, height: 1), masksToBounds: false)
+        
+        // Custom round corner with a few parameter, for this example I create circle view.
+        roundCorner(view: view_orange, cornerRadius: view_orange.frame.height/2, shadowOpacity: 0.35, shadowRadius: 3.2)
+        
+        // Add gesture recognizer for view
+        view_green.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(actionViewGreen(_:))))
+        view_orange.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(actionViewOrange(_:))))
+    }
+    
+    @IBAction func actionButtonBlue(_ sender: UIButton) {
+        // Simple animation
+        pulsate(view: sender)
+    }
+    
+    @objc private func actionViewGreen(_ sender: UITapGestureRecognizer) {
+        // Custom animation with a few parameter
+        shake(view: view_green, duration: 0.2, autoreverses: true, repeatCount: 3)
+    }
+    
+    @objc private func actionViewOrange(_ sender: UITapGestureRecognizer) {
+        // Custom animation with full parameter
+        flash(view: view_orange, duration: 0.5, autoreverses: true, repeatCount: 5, fromValue: 1, toValue: 0.2, timingFunction: CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut))
     }
     
 }

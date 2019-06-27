@@ -28,17 +28,6 @@ public func pulsate(view: UIView, duration: CFTimeInterval? = nil, autoreverses:
     view.layer.add(pulse, forKey: nil)
 }
 
-public func flash(view: UIView, duration: CFTimeInterval? = nil, autoreverses: Bool? = nil, repeatCount: Float? = nil, fromValue: Any? = nil, toValue: Any? = nil, timingFunction: CAMediaTimingFunction? = nil) {
-    let flash = CABasicAnimation(keyPath: "opacity")
-    flash.duration = duration ?? 0.5
-    flash.autoreverses = autoreverses ?? true
-    flash.repeatCount = repeatCount ?? 3
-    flash.fromValue = fromValue ?? 1
-    flash.toValue = toValue ?? 0.1
-    flash.timingFunction = timingFunction ?? CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
-    view.layer.add(flash, forKey: nil)
-}
-
 public func shake(view: UIView, duration: CFTimeInterval? = nil, autoreverses: Bool? = nil, repeatCount: Float? = nil, fromPoint: CGPoint? = nil, toPoint: CGPoint? = nil) {
     let shake = CABasicAnimation(keyPath: "position")
     shake.duration = duration ?? 0.1
@@ -51,6 +40,17 @@ public func shake(view: UIView, duration: CFTimeInterval? = nil, autoreverses: B
     shake.fromValue = fromValue
     shake.toValue = toValue
     view.layer.add(shake, forKey: "position")
+}
+
+public func flash(view: UIView, duration: CFTimeInterval? = nil, autoreverses: Bool? = nil, repeatCount: Float? = nil, fromValue: Any? = nil, toValue: Any? = nil, timingFunction: CAMediaTimingFunction? = nil) {
+    let flash = CABasicAnimation(keyPath: "opacity")
+    flash.duration = duration ?? 0.5
+    flash.autoreverses = autoreverses ?? true
+    flash.repeatCount = repeatCount ?? 3
+    flash.fromValue = fromValue ?? 1
+    flash.toValue = toValue ?? 0.1
+    flash.timingFunction = timingFunction ?? CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+    view.layer.add(flash, forKey: nil)
 }
 
 

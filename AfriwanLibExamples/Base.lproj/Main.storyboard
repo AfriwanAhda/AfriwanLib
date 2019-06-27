@@ -19,27 +19,27 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ond-rt-fRI">
                                 <rect key="frame" x="85" y="234" width="150" height="100"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="systemGreenColor"/>
+                                <color key="backgroundColor" red="0.39426927937165424" green="0.76449963435303747" blue="0.40512616164470283" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="DIe-a7-JTB"/>
                                     <constraint firstAttribute="height" constant="100" id="fME-8H-Evc"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I90-3f-6FE">
-                                <rect key="frame" x="100" y="404" width="120" height="120"/>
+                                <rect key="frame" x="110" y="404" width="100" height="100"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Orange View" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19X-rO-3BS">
-                                        <rect key="frame" x="12" y="20" width="96" height="80"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flash" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19X-rO-3BS">
+                                        <rect key="frame" x="20" y="20" width="60" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" cocoaTouchSystemColor="systemOrangeColor"/>
+                                <color key="backgroundColor" red="0.91268242010610356" green="0.58649148619819202" blue="0.21744986306895656" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstItem="19X-rO-3BS" firstAttribute="leading" secondItem="I90-3f-6FE" secondAttribute="leading" constant="12" id="DgE-ew-nN1"/>
-                                    <constraint firstAttribute="trailing" secondItem="19X-rO-3BS" secondAttribute="trailing" constant="12" id="KOe-vR-OnS"/>
-                                    <constraint firstAttribute="height" constant="120" id="cl2-Vb-6J0"/>
+                                    <constraint firstItem="19X-rO-3BS" firstAttribute="leading" secondItem="I90-3f-6FE" secondAttribute="leading" constant="20" id="DgE-ew-nN1"/>
+                                    <constraint firstAttribute="trailing" secondItem="19X-rO-3BS" secondAttribute="trailing" constant="20" id="KOe-vR-OnS"/>
+                                    <constraint firstAttribute="height" constant="100" id="cl2-Vb-6J0"/>
                                     <constraint firstItem="19X-rO-3BS" firstAttribute="top" secondItem="I90-3f-6FE" secondAttribute="top" constant="20" id="euA-wI-teQ"/>
                                     <constraint firstAttribute="bottom" secondItem="19X-rO-3BS" secondAttribute="bottom" constant="20" id="h7O-jK-nVT"/>
                                     <constraint firstAttribute="width" secondItem="I90-3f-6FE" secondAttribute="height" multiplier="1:1" id="tzt-iC-6xT"/>
@@ -53,12 +53,15 @@
                                     <constraint firstAttribute="width" secondItem="Oke-k8-sSs" secondAttribute="height" multiplier="2:1" id="TwE-Tj-F1h"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <state key="normal" title="Blue Button">
+                                <state key="normal" title="Pulsate">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="actionButtonBlue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o6h-pe-OM7"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Green View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVi-H6-IaE">
-                                <rect key="frame" x="108" y="271.5" width="104.5" height="25.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shake" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVi-H6-IaE">
+                                <rect key="frame" x="132" y="271.5" width="56.5" height="25.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -77,6 +80,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="button_blue" destination="Oke-k8-sSs" id="YZC-z8-iUP"/>
+                        <outlet property="view_green" destination="ond-rt-fRI" id="FIa-t7-p18"/>
+                        <outlet property="view_orange" destination="I90-3f-6FE" id="4ih-YL-J65"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
