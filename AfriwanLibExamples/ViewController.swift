@@ -1,3 +1,4 @@
+//  بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
 //
 //  ViewController.swift
 //  AfriwanLibExamples
@@ -27,7 +28,7 @@ class ViewController: UIViewController {
         // Custom round corner with full parameter
         roundCorner(view: view_green, cornerRadius: 30, shadowOpacity: 0.4, shadowRadius: 2.5, shadowOffset: CGSize.init(width: 1, height: 1), masksToBounds: false)
         
-        // Custom round corner with a few parameter, for this example I create circle view.
+        // Custom round corner with some parameter, for this example I create circle view.
         roundCorner(view: view_orange, cornerRadius: view_orange.frame.height/2, shadowOpacity: 0.35, shadowRadius: 3.2)
         
         // Add gesture recognizer for view
@@ -41,7 +42,7 @@ class ViewController: UIViewController {
     }
     
     @objc private func actionViewGreen(_ sender: UITapGestureRecognizer) {
-        // Custom animation with a few parameter
+        // Custom animation with some parameter
         shake(view: view_green, duration: 0.2, autoreverses: true, repeatCount: 3)
     }
     

@@ -1,3 +1,4 @@
+//  بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
 //
 //  AppDelegate.swift
 //  AfriwanLibExamples
