@@ -43,7 +43,7 @@ flash(view: view_orange, duration: 0.5, autoreverses: true, repeatCount: 5, from
 ```
 
 
-Example of project include in this Library, you can clone or download from this repository.
+Project example include in this Library, you can clone or download from this repository. Happy Coding!!
 
 
 
