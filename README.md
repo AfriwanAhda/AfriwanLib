@@ -30,7 +30,7 @@ roundCorner(view: view_orange, cornerRadius: view_orange.frame.height/2, shadowO
 ```
 
 
-Create animation for UIView & UIButton as simple as this:
+Create animation for UIView, UIButton, UITextField, etc as simple as this:
 ```groovy
 // Simple animation
 pulsate(view: yourVieworButton)
