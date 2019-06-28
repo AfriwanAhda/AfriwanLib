@@ -5,11 +5,11 @@ Create animation, round corner of view or button, and much more easily with Afri
 
 # How to use
 First step add AfriwanLib on your Podfile
-```swift
+```groovy
 pod 'AfriwanLib'
 ```
 Now you can create round corner of your view or button easily with 1 line of code:
-```Swift
+```groovy
 // Simple round corner
 roundCorner(view: button_blue, cornerRadius: 15)
 
