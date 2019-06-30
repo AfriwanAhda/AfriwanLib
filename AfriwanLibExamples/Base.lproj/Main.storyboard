@@ -90,7 +90,7 @@
             </objects>
             <point key="canvasLocation" x="138.75" y="105.63380281690141"/>
         </scene>
-        <!--AfriwanLib-->
+        <!--General Library-->
         <scene sceneID="Cne-Yk-Esh">
             <objects>
                 <tableViewController storyboardIdentifier="MainID" id="cAx-BL-nyo" customClass="MainVC" customModule="AfriwanLibExamples" customModuleProvider="target" sceneMemberID="viewController">
@@ -119,7 +119,9 @@
                             <outlet property="delegate" destination="cAx-BL-nyo" id="lfZ-d1-ij3"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="AfriwanLib" id="TQf-nI-7dX"/>
+                    <navigationItem key="navigationItem" title="General Library" id="TQf-nI-7dX">
+                        <barButtonItem key="backBarButtonItem" title=" " id="ugO-Tr-haz"/>
+                    </navigationItem>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="segue_animation" id="mQj-Pr-m4j"/>
                         <segue destination="7s4-PB-o5G" kind="show" identifier="segue_connection" id="U52-54-Ixv"/>
