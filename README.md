@@ -1,7 +1,9 @@
 # AfriwanLib
 Create animation, round corner of view or button, and much more easily with AfriwanLib a library for your iOS app.
 
-[<img src="https://github.com/AfriwanAhda/AfriwanLib/blob/master/images/demo.gif" width="231" height="500" alt="Afriwan Ahda"/>](https://diponten.com)
+[<img src="https://github.com/AfriwanAhda/AfriwanLib/blob/master/demo/animation.gif" width="231" height="500" alt="Afriwan Ahda"/>](https://diponten.com)
+
+[<img src="https://github.com/AfriwanAhda/AfriwanLib/blob/master/demo/connection.gif" width="231" height="500" alt="Afriwan Ahda"/>](https://diponten.com)
 
 
 # How to use
