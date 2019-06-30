@@ -49,6 +49,7 @@
 /* Begin PBXFileReference section */
 		6274697022C70A3C00A273A9 /* ConnectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionVC.swift; sourceTree = "<group>"; };
 		6274697222C71FEB00A273A9 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		62B4A58622C8DE0E003B342C /* AfriwanLibExamples.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AfriwanLibExamples.entitlements; sourceTree = "<group>"; };
 		62FCCC8222C3548D00380E31 /* AfriwanLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AfriwanLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62FCCC8522C3548D00380E31 /* AfriwanLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AfriwanLib.h; sourceTree = "<group>"; };
 		62FCCC8622C3548D00380E31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -142,6 +143,7 @@
 		62FCCCB722C355F800380E31 /* AfriwanLibExamples */ = {
 			isa = PBXGroup;
 			children = (
+				62B4A58622C8DE0E003B342C /* AfriwanLibExamples.entitlements */,
 				62FCCCB822C355F800380E31 /* AppDelegate.swift */,
 				6274697222C71FEB00A273A9 /* MainVC.swift */,
 				62FCCCBA22C355F800380E31 /* AnimationVC.swift */,
@@ -566,7 +568,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AfriwanLibExamples/AfriwanLibExamples.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_UIKITFORMAC_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = WY794SNHMU;
 				INFOPLIST_FILE = AfriwanLibExamples/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -575,6 +579,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = diponten.AfriwanLibExamples;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_UIKITFORMAC = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -584,7 +589,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AfriwanLibExamples/AfriwanLibExamples.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_UIKITFORMAC_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = WY794SNHMU;
 				INFOPLIST_FILE = AfriwanLibExamples/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -593,6 +600,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = diponten.AfriwanLibExamples;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_UIKITFORMAC = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
