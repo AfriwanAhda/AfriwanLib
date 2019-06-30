@@ -63,7 +63,9 @@ resultText = "Not Connected"
 ```
 
 
-Project example include in this Library, you can clone or download from this repository. Happy Coding!!
+Project example include in this Library, you can clone or download from this repository. Use Xcode 11 Beta to open project example and choose "AfriwanLibExamples" like picture below:
+[<img src="https://github.com/AfriwanAhda/AfriwanLib/blob/master/demo/xcode.PNG">]
 
+The good news, beside iOS and iPadOS app, you can use this library to your macOS app too with Xcode 11 Beta, but don't worry with lower Xcode you still can use this library for your iOS app. Happy Coding!!
 
 
