@@ -28,6 +28,8 @@ class ConnectionVC: UIViewController {
     @IBAction func actionCheckConnection(_ sender: UIButton) {
         pulsate(view: sender)
         var resultText = ""
+        
+        // Check connection to internet
         if isConnectedToInternet() {
             resultText = "Connected"
         } else {

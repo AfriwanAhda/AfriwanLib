@@ -140,7 +140,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.94783737181406946" green="0.94783737181406946" blue="0.94783737181406946" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <color key="textShadowColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         </textAttributes>
                     </navigationBar>
