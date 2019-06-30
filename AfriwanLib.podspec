@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "AfriwanLib"
-  spec.version      = "0.5"
+  spec.version      = "0.6"
   spec.summary      = "General CocoaPods library written in Swift"
 
   # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-  Create animation, round corner of view or button, and much more easily with AfriwanLib a library for your iOS app.
+  Create animation, round corner of view or button, check internet connection and much more easily with AfriwanLib a library for your iOS app.
                    DESC
 
   spec.homepage     = "https://github.com/AfriwanAhda/AfriwanLib.git"
