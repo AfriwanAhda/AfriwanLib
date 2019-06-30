@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="scm-bh-LIH">
     <device id="retina4_0" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -9,16 +9,16 @@
         <capability name="iOS 13.0 system colors" minToolsVersion="11.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--AnimationVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AfriwanLibExamples" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AnimationID" id="BYZ-38-t0r" customClass="AnimationVC" customModule="AfriwanLibExamples" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ond-rt-fRI">
-                                <rect key="frame" x="85" y="234" width="150" height="100"/>
+                                <rect key="frame" x="85" y="256" width="150" height="100"/>
                                 <color key="backgroundColor" red="0.39426927937165424" green="0.76449963435303747" blue="0.40512616164470283" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="DIe-a7-JTB"/>
@@ -26,12 +26,12 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I90-3f-6FE">
-                                <rect key="frame" x="110" y="404" width="100" height="100"/>
+                                <rect key="frame" x="110" y="426" width="100" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flash" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19X-rO-3BS">
                                         <rect key="frame" x="20" y="20" width="60" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -46,7 +46,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oke-k8-sSs">
-                                <rect key="frame" x="60" y="64" width="200" height="100"/>
+                                <rect key="frame" x="60" y="86" width="200" height="100"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="systemBlueColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="Sbt-lI-mzQ"/>
@@ -61,9 +61,9 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shake" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVi-H6-IaE">
-                                <rect key="frame" x="132" y="271.5" width="56.5" height="25.5"/>
+                                <rect key="frame" x="132" y="293.5" width="56.5" height="25.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -89,6 +89,115 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138.75" y="105.63380281690141"/>
+        </scene>
+        <!--AfriwanLib-->
+        <scene sceneID="Cne-Yk-Esh">
+            <objects>
+                <tableViewController storyboardIdentifier="MainID" id="cAx-BL-nyo" customClass="MainVC" customModule="AfriwanLibExamples" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="UNT-OQ-eSy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexColor" cocoaTouchSystemColor="opaqueSeparatorColor"/>
+                        <color key="sectionIndexBackgroundColor" cocoaTouchSystemColor="opaqueSeparatorColor"/>
+                        <color key="sectionIndexTrackingBackgroundColor" cocoaTouchSystemColor="opaqueSeparatorColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellIdentifier" id="YlF-gH-cLz">
+                                <rect key="frame" x="0.0" y="28" width="320" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YlF-gH-cLz" id="w2L-fO-Sdo">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="cAx-BL-nyo" id="VYV-Bo-AST"/>
+                            <outlet property="delegate" destination="cAx-BL-nyo" id="lfZ-d1-ij3"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="AfriwanLib" id="TQf-nI-7dX"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="segue_animation" id="mQj-Pr-m4j"/>
+                        <segue destination="7s4-PB-o5G" kind="show" identifier="segue_connection" id="U52-54-Ixv"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nvR-Lh-moh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-718" y="536"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="166-7G-PtG">
+            <objects>
+                <navigationController id="scm-bh-LIH" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="POR-de-eJG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.94783737181406946" green="0.94783737181406946" blue="0.94783737181406946" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="cAx-BL-nyo" kind="relationship" relationship="rootViewController" id="H8f-nC-P2l"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vpr-0r-kc9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1504" y="536"/>
+        </scene>
+        <!--ConnectionVC-->
+        <scene sceneID="roc-AN-4ug">
+            <objects>
+                <viewController storyboardIdentifier="ConnectionID" id="7s4-PB-o5G" customClass="ConnectionVC" customModule="AfriwanLibExamples" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xlh-qb-gIo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ta4-3J-bTv">
+                                <rect key="frame" x="80" y="220.5" width="160" height="110"/>
+                                <color key="backgroundColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ta4-3J-bTv" secondAttribute="height" multiplier="16:11" id="X40-vK-e5w"/>
+                                    <constraint firstAttribute="height" constant="110" id="tUZ-mw-fjY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Connection">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionCheckConnection:" destination="7s4-PB-o5G" eventType="touchUpInside" id="7o6-ao-7sA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dD8-uI-vJU">
+                                <rect key="frame" x="30" y="365.5" width="260" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dD8-uI-vJU" firstAttribute="leading" secondItem="3q8-XE-waw" secondAttribute="leading" constant="30" id="8Ar-YM-Ne5"/>
+                            <constraint firstItem="3q8-XE-waw" firstAttribute="trailing" secondItem="dD8-uI-vJU" secondAttribute="trailing" constant="30" id="AdA-9I-eYW"/>
+                            <constraint firstItem="Ta4-3J-bTv" firstAttribute="centerY" secondItem="3q8-XE-waw" secondAttribute="centerY" multiplier="0.9" id="GWJ-hy-kL8"/>
+                            <constraint firstItem="Ta4-3J-bTv" firstAttribute="centerX" secondItem="3q8-XE-waw" secondAttribute="centerX" id="dSp-CQ-c97"/>
+                            <constraint firstItem="dD8-uI-vJU" firstAttribute="top" secondItem="Ta4-3J-bTv" secondAttribute="bottom" constant="35" id="hlq-qQ-3nv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3q8-XE-waw"/>
+                    </view>
+                    <connections>
+                        <outlet property="button_connection" destination="Ta4-3J-bTv" id="687-m6-iVK"/>
+                        <outlet property="lb_status" destination="dD8-uI-vJU" id="v2j-Y5-gVX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gfs-3X-KaA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.75" y="818.66197183098598"/>
         </scene>
     </scenes>
 </document>

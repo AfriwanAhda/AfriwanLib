@@ -7,7 +7,7 @@
 //  Copyright © 2019 AfriwanAhda. All rights reserved.
 //
 
-import Foundation
+import SystemConfiguration
 
 public func roundCorner(view: UIView, cornerRadius: CGFloat, shadowOpacity: Float? = nil, shadowRadius: CGFloat? = nil, shadowOffset: CGSize? = nil, masksToBounds: Bool? = nil) {
     view.layer.cornerRadius = cornerRadius
@@ -52,6 +52,25 @@ public func flash(view: UIView, duration: CFTimeInterval? = nil, autoreverses: B
     flash.toValue = toValue ?? 0.1
     flash.timingFunction = timingFunction ?? CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
     view.layer.add(flash, forKey: nil)
+}
+
+public func isConnectedToInternet() -> Bool {
+    var zeroAddress = sockaddr_in(sin_len: 0, sin_family: 0, sin_port: 0, sin_addr: in_addr(s_addr: 0), sin_zero: (0, 0, 0, 0, 0, 0, 0, 0))
+    zeroAddress.sin_len = UInt8(MemoryLayout.size(ofValue: zeroAddress))
+    zeroAddress.sin_family = sa_family_t(AF_INET)
+    let defaultRouteReachability = withUnsafePointer(to: &zeroAddress) {
+        $0.withMemoryRebound(to: sockaddr.self, capacity: 1) {zeroSockAddress in
+            SCNetworkReachabilityCreateWithAddress(nil, zeroSockAddress)
+        }
+    }
+    var flags: SCNetworkReachabilityFlags = SCNetworkReachabilityFlags(rawValue: 0)
+    if SCNetworkReachabilityGetFlags(defaultRouteReachability!, &flags) == false {
+        return false
+    }
+    let isReachable = (flags.rawValue & UInt32(kSCNetworkFlagsReachable)) != 0
+    let needsConnection = (flags.rawValue & UInt32(kSCNetworkFlagsConnectionRequired)) != 0
+    let ret = (isReachable && !needsConnection)
+    return ret
 }
 
 

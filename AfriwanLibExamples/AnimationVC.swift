@@ -1,6 +1,6 @@
 //  بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
 //
-//  ViewController.swift
+//  AnimationVC.swift
 //  AfriwanLibExamples
 //
 //  Created by Afriwan Ahda on 26/06/19.
@@ -10,11 +10,12 @@
 import UIKit
 import AfriwanLib
 
-class ViewController: UIViewController {
+class AnimationVC: UIViewController {
     
     @IBOutlet weak var button_blue: UIButton!
     @IBOutlet weak var view_green: UIView!
     @IBOutlet weak var view_orange: UIView!
+    var contentTitle: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +23,8 @@ class ViewController: UIViewController {
     }
     
     private func setupView() {
+        navigationItem.title = contentTitle
+        
         // Simple round corner
         roundCorner(view: button_blue, cornerRadius: 15)
         
