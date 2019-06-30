@@ -66,7 +66,7 @@ resultText = "Not Connected"
 
 # One Library for iOS, iPadOS, and macOS App
 
-The good news, beside iOS and iPadOS app, you can use this library to your macOS app too with Xcode 11, but don't worry with lower Xcode you still can use this library for your iOS app.
+The good news, beside iOS app, you can use this library to your iPadOS and macOS app too with Xcode 11, but don't worry with lower Xcode you still can use this library for your iOS app.
 
 Project example include in this Library, you can clone or download from this repository. Use Xcode 11 Beta to open project and choose "AfriwanLibExamples" like picture below:
 
