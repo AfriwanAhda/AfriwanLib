@@ -10,7 +10,7 @@
 import UIKit
 
 class MainVC: UITableViewController {
-    var content = ["Animation and Round Corner", "Check Internet Connection"]
+    var content = ["Animation and Round Corner", "Check Internet Connection", "Load Image"]
     private var contentTitle: String?
     
     override func viewDidLoad() {
@@ -22,7 +22,7 @@ class MainVC: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 3
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -39,6 +39,8 @@ class MainVC: UITableViewController {
             performSegue(withIdentifier: "segue_animation", sender: self)
         case 1:
             performSegue(withIdentifier: "segue_connection", sender: self)
+        case 2:
+            performSegue(withIdentifier: "segue_load_image", sender: self)
         default: break
         }
     }
@@ -47,8 +49,11 @@ class MainVC: UITableViewController {
         if segue.identifier == "segue_animation" {
             let destination = segue.destination as! AnimationVC
             destination.contentTitle = contentTitle
-        } else {
+        } else if segue.identifier == "segue_connection" {
             let destination = segue.destination as! ConnectionVC
+            destination.contentTitle = contentTitle
+        } else {
+            let destination = segue.destination as! LoadImageVC
             destination.contentTitle = contentTitle
         }
     }

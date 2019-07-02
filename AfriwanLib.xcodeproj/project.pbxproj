@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6252722122C9E3E700DAA627 /* LoadImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6252722022C9E3E700DAA627 /* LoadImageVC.swift */; };
 		6274697122C70A3C00A273A9 /* ConnectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6274697022C70A3C00A273A9 /* ConnectionVC.swift */; };
 		6274697322C71FEB00A273A9 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6274697222C71FEB00A273A9 /* MainVC.swift */; };
 		628B6A5122C4AEA3002DAA49 /* AfriwanLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62FCCC8222C3548D00380E31 /* AfriwanLib.framework */; };
 		628B6A5222C4AEA3002DAA49 /* AfriwanLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 62FCCC8222C3548D00380E31 /* AfriwanLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		628EA73D22C9BFC400EDB995 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628EA73C22C9BFC400EDB995 /* CacheManager.swift */; };
+		628EA73F22C9C15F00EDB995 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628EA73E22C9C15F00EDB995 /* UIImageView.swift */; };
 		62FCCC8C22C3548D00380E31 /* AfriwanLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62FCCC8222C3548D00380E31 /* AfriwanLib.framework */; };
 		62FCCC9122C3548D00380E31 /* AfriwanLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCCC9022C3548D00380E31 /* AfriwanLibTests.swift */; };
 		62FCCC9322C3548D00380E31 /* AfriwanLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 62FCCC8522C3548D00380E31 /* AfriwanLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -47,8 +50,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6252722022C9E3E700DAA627 /* LoadImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadImageVC.swift; sourceTree = "<group>"; };
 		6274697022C70A3C00A273A9 /* ConnectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionVC.swift; sourceTree = "<group>"; };
 		6274697222C71FEB00A273A9 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		628EA73C22C9BFC400EDB995 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		628EA73E22C9C15F00EDB995 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		62B4A58622C8DE0E003B342C /* AfriwanLibExamples.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AfriwanLibExamples.entitlements; sourceTree = "<group>"; };
 		62FCCC8222C3548D00380E31 /* AfriwanLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AfriwanLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62FCCC8522C3548D00380E31 /* AfriwanLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AfriwanLib.h; sourceTree = "<group>"; };
@@ -127,6 +133,8 @@
 				62FCCC8522C3548D00380E31 /* AfriwanLib.h */,
 				62FCCC8622C3548D00380E31 /* Info.plist */,
 				62FCCCC822C35B8A00380E31 /* GeneralLib.swift */,
+				628EA73C22C9BFC400EDB995 /* CacheManager.swift */,
+				628EA73E22C9C15F00EDB995 /* UIImageView.swift */,
 			);
 			path = AfriwanLib;
 			sourceTree = "<group>";
@@ -148,6 +156,7 @@
 				6274697222C71FEB00A273A9 /* MainVC.swift */,
 				62FCCCBA22C355F800380E31 /* AnimationVC.swift */,
 				6274697022C70A3C00A273A9 /* ConnectionVC.swift */,
+				6252722022C9E3E700DAA627 /* LoadImageVC.swift */,
 				62FCCCBC22C355F800380E31 /* Main.storyboard */,
 				62FCCCBF22C355FA00380E31 /* Assets.xcassets */,
 				62FCCCC122C355FA00380E31 /* LaunchScreen.storyboard */,
@@ -298,6 +307,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				628EA73D22C9BFC400EDB995 /* CacheManager.swift in Sources */,
+				628EA73F22C9C15F00EDB995 /* UIImageView.swift in Sources */,
 				62FCCCC922C35B8A00380E31 /* GeneralLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,6 +327,7 @@
 			files = (
 				62FCCCBB22C355F800380E31 /* AnimationVC.swift in Sources */,
 				6274697322C71FEB00A273A9 /* MainVC.swift in Sources */,
+				6252722122C9E3E700DAA627 /* LoadImageVC.swift in Sources */,
 				6274697122C70A3C00A273A9 /* ConnectionVC.swift in Sources */,
 				62FCCCB922C355F800380E31 /* AppDelegate.swift in Sources */,
 			);

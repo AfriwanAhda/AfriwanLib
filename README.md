@@ -1,5 +1,5 @@
 # AfriwanLib
-Create animation, round corner of view or button, check internet connection and much more easily with AfriwanLib a library for your iOS app.
+General library for iOS, iPadOS and macOS app. Create animation, round corner of view/button, check internet connection easily with AfriwanLib.
 
 [<img src="https://github.com/AfriwanAhda/AfriwanLib/blob/master/demo/animation.gif" width="281.1" height="500" alt="Afriwan Ahda"/>](https://diponten.com)
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -68,7 +68,7 @@ resultText = "Not Connected"
 
 The good news, beside iOS app, you can use this library for your iPadOS and macOS app too with Xcode 11, but don't worry with lower Xcode you still can use this library for your iOS app.
 
-Project example include in this Library, you can clone or download from this repository. Use Xcode 11 Beta to open project and choose "AfriwanLibExamples" like picture below:
+Project example include in this Library, you can clone or download from this repository. Use Xcode 11 to open project and choose "AfriwanLibExamples" like picture below:
 
 [<img src="https://github.com/AfriwanAhda/AfriwanLib/blob/master/demo/xcode.png" alt="Xcode"/>](https://developer.apple.com/xcode/whats-new/)
 
