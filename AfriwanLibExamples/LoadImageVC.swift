@@ -27,7 +27,7 @@ class LoadImageVC: UIViewController {
         roundCorner(view: image_bottom, cornerRadius: image_bottom.bounds.width/2, masksToBounds: true)
         
         // Simple load image
-        image_top.loadImage(imageUrl: "https://github.com/AfriwanAhda/AfriwanLib/blob/master/demo/sky.jpg")
+        image_top.loadImage(imageUrl: "https://raw.githubusercontent.com/AfriwanAhda/AfriwanLib/master/demo/sky.png")
         
         // Load image with background image before image fully loaded
         image_bottom.loadImage(imageUrl: "https://avatars0.githubusercontent.com/u/33817855?s=400&u=4c3c536e97c52bf1108604b53e6d46a58b55d426&v=4", backgroundImage: #imageLiteral(resourceName: "AppIcon"))
