@@ -225,36 +225,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y2P-tG-S8a">
-                                <rect key="frame" x="22" y="114.5" width="276" height="120"/>
+                                <rect key="frame" x="40" y="176" width="240" height="120"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="y2P-tG-S8a" secondAttribute="height" multiplier="2.3:1" id="7HS-V9-Djr"/>
+                                    <constraint firstAttribute="width" secondItem="y2P-tG-S8a" secondAttribute="height" multiplier="2:1" id="7HS-V9-Djr"/>
                                     <constraint firstAttribute="height" constant="120" id="BK5-H9-Je4"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZXG-D7-b0B">
-                                <rect key="frame" x="100" y="289.5" width="120" height="120"/>
+                                <rect key="frame" x="100" y="256" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ZXG-D7-b0B" secondAttribute="height" multiplier="1:1" id="Su4-LU-3Xx"/>
                                     <constraint firstAttribute="height" constant="120" id="iAP-vX-R9H"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ydH-SO-B7J">
-                                <rect key="frame" x="0.0" y="259.5" width="320" height="5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="5" id="1aT-DG-4jT"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ydH-SO-B7J" firstAttribute="leading" secondItem="iNM-xp-Q5d" secondAttribute="leading" id="F8r-Jb-lJC"/>
-                            <constraint firstItem="ZXG-D7-b0B" firstAttribute="top" secondItem="ydH-SO-B7J" secondAttribute="bottom" constant="25" id="KDO-Ro-Grc"/>
-                            <constraint firstItem="iNM-xp-Q5d" firstAttribute="trailing" secondItem="ydH-SO-B7J" secondAttribute="trailing" id="X7R-mC-br2"/>
-                            <constraint firstItem="ydH-SO-B7J" firstAttribute="top" secondItem="y2P-tG-S8a" secondAttribute="bottom" constant="25" id="Yz4-Gr-6IV"/>
-                            <constraint firstItem="ydH-SO-B7J" firstAttribute="centerY" secondItem="iNM-xp-Q5d" secondAttribute="centerY" id="auu-ea-mea"/>
+                            <constraint firstItem="y2P-tG-S8a" firstAttribute="centerY" secondItem="iNM-xp-Q5d" secondAttribute="centerY" multiplier="0.9" id="LFq-kM-85H"/>
                             <constraint firstItem="ZXG-D7-b0B" firstAttribute="centerX" secondItem="iNM-xp-Q5d" secondAttribute="centerX" id="nTl-VP-sny"/>
-                            <constraint firstItem="ydH-SO-B7J" firstAttribute="centerX" secondItem="iNM-xp-Q5d" secondAttribute="centerX" id="ygf-eh-JUv"/>
+                            <constraint firstItem="ZXG-D7-b0B" firstAttribute="top" secondItem="y2P-tG-S8a" secondAttribute="bottom" constant="-40" id="o8F-i6-pko"/>
                             <constraint firstItem="y2P-tG-S8a" firstAttribute="centerX" secondItem="iNM-xp-Q5d" secondAttribute="centerX" id="yyG-DO-hZd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iNM-xp-Q5d"/>
