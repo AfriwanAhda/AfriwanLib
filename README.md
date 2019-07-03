@@ -5,7 +5,7 @@ General library for iOS, iPadOS and macOS app. Create animation, round corner of
 &nbsp; &nbsp;
 [<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/loadimage.gif" width="281.1" height="500" alt="Load Image Demo"/>](https://apps.apple.com/id/developer/afriwan-ahda/id1330133888)
 &nbsp; &nbsp;
-[<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/connection.gif" width="281.1" height="500" alt="Connection Demo"/>](https://apps.apple.com/id/developer/afriwan-ahda/id1330133888)
+[<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/connection.gif" width="281.1" height="500" alt="Connection Demo"/>](## Check Internet Connection)
 
 
 # How to use
@@ -72,6 +72,6 @@ The good news, beside iOS app, you can use this library for your iPadOS and macO
 
 Project example include in this Library, you can clone or download from this repository. Use Xcode 11 to open project and choose "AfriwanLibExamples" like picture below:
 
-[<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/xcode.png" alt="AfriwanLibExamples"/>](https://developer.apple.com/xcode/whats-new/)
+[<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/xcode.png" alt="Project example"/>](https://developer.apple.com/xcode/whats-new/)
 
 
