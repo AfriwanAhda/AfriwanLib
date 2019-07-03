@@ -1,9 +1,9 @@
 # AfriwanLib
 General library for iOS, iPadOS and macOS app. Create animation, round corner of view/button, check internet connection easily with AfriwanLib.
 
-[<img src="https://github.com/AfriwanAhda/AfriwanLib/blob/master/demo/animation.gif" width="281.1" height="500" alt="Afriwan Ahda"/>](https://diponten.com)
+[<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/animation.gif" width="281.1" height="500" alt="Animation Demo"/>](https://diponten.com)
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-[<img src="https://github.com/AfriwanAhda/AfriwanLib/blob/master/demo/connection.gif" width="281.1" height="500" alt="Afriwan Ahda"/>](https://apps.apple.com/id/developer/afriwan-ahda/id1330133888)
+[<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/connection.gif" width="281.1" height="500" alt="Connection Demo"/>](https://apps.apple.com/id/developer/afriwan-ahda/id1330133888)
 
 
 # How to use
@@ -70,6 +70,6 @@ The good news, beside iOS app, you can use this library for your iPadOS and macO
 
 Project example include in this Library, you can clone or download from this repository. Use Xcode 11 to open project and choose "AfriwanLibExamples" like picture below:
 
-[<img src="https://github.com/AfriwanAhda/AfriwanLib/blob/master/demo/xcode.png" alt="Xcode"/>](https://developer.apple.com/xcode/whats-new/)
+[<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/xcode.png" alt="AfriwanLibExamples"/>](https://developer.apple.com/xcode/whats-new/)
 
 
