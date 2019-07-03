@@ -1,9 +1,9 @@
 # AfriwanLib
 General library for iOS, iPadOS and macOS app. Create animation, round corner of view/button, check internet connection easily with AfriwanLib.
 
-[<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/loadimage.gif" width="281.1" height="500" alt="Load Image Demo"/>](https://apps.apple.com/id/developer/afriwan-ahda/id1330133888)
-[<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/animation.gif" width="281.1" height="500" alt="Animation Demo"/>](https://diponten.com)
-[<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/connection.gif" width="281.1" height="500" alt="Connection Demo"/>](## Check Internet Connection)
+[<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/loadimage.gif" width="281.1" height="500" alt="Load Image Demo"/>](https://diponten.com)
+[<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/animation.gif" width="281.1" height="500" alt="Animation Demo"/>](https://diponten.com/2019/07/02/create-animation/)
+[<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/connection.gif" width="281.1" height="500" alt="Connection Demo"/>](https://diponten.com)
 
 
 # How to use
