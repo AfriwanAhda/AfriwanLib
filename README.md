@@ -48,16 +48,16 @@ shake(view: view_green, duration: 0.2, autoreverses: true, repeatCount: 3)
 // Custom animation with full parameter
 flash(view: view_orange, duration: 0.5, autoreverses: true, repeatCount: 5, fromValue: 1, toValue: 0.2, timingFunction: CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut))
 ```
-## [<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/loadimage.gif" width="28.1" height="50" alt="Load Image Demo"/>](https://diponten.com)    &nbsp;&nbsp;    Load Image
+## [<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/loadimage.gif" width="28.1" height="50" alt="Load Image Demo"/>](https://diponten.com/2019/07/04/loadimage/)    &nbsp;&nbsp;    Load Image
 
-Load the image, although there is no internet connection you can see the image that have been loaded before, so it faster to display the image and saving internet quota.
+Load an image, even there is no internet connection you can see an image that have been loaded before, so it faster to display image and saving internet quota. It's give good experience for user.
 
-Load image from url without background:
+With single line of code we can load an image from url without background:
 ```groovy
 image_view.loadImage(imageUrl: "url")
 ```
 
-Load image with background image before image fully loaded (for example with AppIcon image background)
+Load image with background image before image fully loaded (for example with "AppIcon" image background) with this simple code:
 ```groovy
 image_view.loadImage(imageUrl: "url", backgroundImage: #imageLiteral(resourceName: "AppIcon"))
 ```
