@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-  General library for iOS, iPadOS and macOS app. Create animation, round corner of view or button, check internet connection easily with AfriwanLib.
+  General library for iOS, iPadOS and macOS app. Load image, create animation, round corner of view or button, check internet connection easily with AfriwanLib.
                    DESC
 
   spec.homepage     = "https://github.com/AfriwanAhda/AfriwanLib.git"

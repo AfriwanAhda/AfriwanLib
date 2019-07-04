@@ -3,7 +3,7 @@ General library for iOS, iPadOS and macOS app. Create animation, round corner of
 
 [<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/loadimage.gif" width="281.1" height="500" alt="Load Image Demo"/>](https://diponten.com)
 [<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/animation.gif" width="281.1" height="500" alt="Animation Demo"/>](https://diponten.com/2019/07/02/create-animation/)
-[<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/connection.gif" width="281.1" height="500" alt="Connection Demo"/>](https://diponten.com)
+[<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/connection.gif" width="281.1" height="500" alt="Connection Demo"/>](https://diponten.com/2019/07/02/connection/)
 
 
 # How to use
@@ -20,7 +20,7 @@ import AfriwanLib
 ```
 
 
-## Create Animation & Round Corner
+## Create Animation & Round Corner  [<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/animation.gif" width="5.6" height="10" alt="Animation Demo"/>](https://diponten.com/2019/07/02/create-animation/)
 Now you can create round corner of your view or button easily with single lline of code:
 ```groovy
 roundCorner(view: button_blue, cornerRadius: 15)
@@ -49,6 +49,18 @@ shake(view: view_green, duration: 0.2, autoreverses: true, repeatCount: 3)
 
 // Custom animation with full parameter
 flash(view: view_orange, duration: 0.5, autoreverses: true, repeatCount: 5, fromValue: 1, toValue: 0.2, timingFunction: CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut))
+```
+
+## Load Image
+
+Load image from url without background:
+```groovy
+image_view.loadImage(imageUrl: "url")
+```
+
+Load image with background image before image fully loaded (for example with AppIcon image background)
+```groovy
+image_view.loadImage(imageUrl: "url", backgroundImage: #imageLiteral(resourceName: "AppIcon"))
 ```
 
 ## Check Internet Connection
