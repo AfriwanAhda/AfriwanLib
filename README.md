@@ -50,6 +50,8 @@ flash(view: view_orange, duration: 0.5, autoreverses: true, repeatCount: 5, from
 ```
 ## [<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/loadimage.gif" width="28.1" height="50" alt="Load Image Demo"/>](https://diponten.com)    &nbsp;&nbsp;    Load Image
 
+Load the image, although there is no internet connection you can see the image that have been loaded before, so it faster to display the image and saving internet quota.
+
 Load image from url without background:
 ```groovy
 image_view.loadImage(imageUrl: "url")
