@@ -1,9 +1,9 @@
 # AfriwanLib
 General library for iOS, iPadOS and macOS app. Create animation, round corner of view/button, check internet connection easily with AfriwanLib.
 
-[<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/loadimage.gif" width="281.1" height="500" alt="Load Image Demo"/>](https://diponten.com)
-[<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/animation.gif" width="281.1" height="500" alt="Animation Demo"/>](https://diponten.com/2019/07/02/create-animation/)
-[<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/connection.gif" width="281.1" height="500" alt="Connection Demo"/>](https://diponten.com/2019/07/02/connection/)
+[<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/loadimage.gif" width="281.1" height="500" alt="Load Image Link"/>](https://github.com/AfriwanAhda/AfriwanLib#load-image)
+[<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/animation.gif" width="281.1" height="500" alt="Animation Link"/>](https://github.com/AfriwanAhda/AfriwanLib#create-animation--round-corner-----)
+[<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/connection.gif" width="281.1" height="500" alt="Connection Link"/>](https://github.com/AfriwanAhda/AfriwanLib#check-internet-connection)
 
 
 # How to use
@@ -48,8 +48,7 @@ shake(view: view_green, duration: 0.2, autoreverses: true, repeatCount: 3)
 // Custom animation with full parameter
 flash(view: view_orange, duration: 0.5, autoreverses: true, repeatCount: 5, fromValue: 1, toValue: 0.2, timingFunction: CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut))
 ```
-
-## Load Image
+## Load Image  &nbsp; &nbsp; &nbsp; [<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/loadimage.gif" width="28.1" height="50" alt="Load Image Demo"/>](https://diponten.com)
 
 Load image from url without background:
 ```groovy
@@ -60,8 +59,7 @@ Load image with background image before image fully loaded (for example with App
 ```groovy
 image_view.loadImage(imageUrl: "url", backgroundImage: #imageLiteral(resourceName: "AppIcon"))
 ```
-
-## Check Internet Connection
+## Check Internet Connection  &nbsp; &nbsp; &nbsp; [<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/connection.gif" width="28.1" height="50" alt="Connection Demo"/>](https://diponten.com/2019/07/02/connection/)
 
 Very easy to check internet connection
 ```groovy
