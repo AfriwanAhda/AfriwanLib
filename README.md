@@ -18,9 +18,7 @@ Open your Terminal and run Pod Install. Don’t forget to import AfriwanLib in y
 ```groovy
 import AfriwanLib
 ```
-
-
-## Create Animation & Round Corner          [<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/animation.gif" width="28.1" height="50" alt="Animation Demo"/>](https://diponten.com/2019/07/02/create-animation/)
+## Create Animation & Round Corner  &nbsp; &nbsp; &nbsp; [<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/animation.gif" width="28.1" height="50" alt="Animation Demo"/>](https://diponten.com/2019/07/02/create-animation/)
 Now you can create round corner of your view or button easily with single lline of code:
 ```groovy
 roundCorner(view: button_blue, cornerRadius: 15)
