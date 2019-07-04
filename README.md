@@ -1,5 +1,5 @@
-# AfriwanLib
-General library for iOS, iPadOS and macOS app. Create animation, round corner of view/button, check internet connection easily with AfriwanLib.
+# One Library for All
+General library for iOS, iPadOS and macOS app. Load image, create animation, round corner of view/button, check internet connection easily with AfriwanLib. You can click the image for easy step to use this library.
 
 [<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/loadimage.gif" width="281.1" height="500" alt="Load Image Link"/>](https://github.com/AfriwanAhda/AfriwanLib#--------load-image)
 [<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/animation.gif" width="281.1" height="500" alt="Animation Link"/>](https://github.com/AfriwanAhda/AfriwanLib#--------create-animation--round-corner)
