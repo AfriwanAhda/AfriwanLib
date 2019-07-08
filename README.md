@@ -88,9 +88,6 @@ Complete toast with all parameter, example:
 toast(message: "Complete Toast with all parameter", view: view, duration: 5, textColor: UIColor.white, backgroundColor: UIColor.blue, y: 179, height: 32, fontSize: 16)
 ```
 
-## Contributor
-Afriwan Ahda (afriwan.phys@gmail.com)
-
 # One Library for iOS, iPadOS, and macOS App
 
 The good news, beside iOS app, you can use this library for your iPadOS and macOS app too with Xcode 11, but don't worry with lower Xcode you still can use this library for your iOS app.
