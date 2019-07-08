@@ -257,6 +257,81 @@
             </objects>
             <point key="canvasLocation" x="139" y="1337"/>
         </scene>
+        <!--ToastVC-->
+        <scene sceneID="ktT-p0-ydl">
+            <objects>
+                <viewController storyboardIdentifier="ToastID" id="LGK-Nn-c6K" customClass="ToastVC" customModule="AfriwanLibExamples" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nVF-zl-Coi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ut-rd-e2o">
+                                <rect key="frame" x="82" y="113" width="156" height="60"/>
+                                <color key="backgroundColor" red="0.77170050600456852" green="0.27745837471865903" blue="0.21235966759517949" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0Ut-rd-e2o" secondAttribute="height" multiplier="2.6:1" id="8RN-8X-Itf"/>
+                                    <constraint firstAttribute="height" constant="60" id="y0Z-hT-hJu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Simple Toast">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionButtonRed:" destination="LGK-Nn-c6K" eventType="touchUpInside" id="88g-C0-tJJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fb-x2-Fik">
+                                <rect key="frame" x="82" y="203" width="156" height="60"/>
+                                <color key="backgroundColor" red="0.82841159214223103" green="0.79003444732196404" blue="0.18227151070561254" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="OFB-G4-BUu"/>
+                                    <constraint firstAttribute="width" secondItem="6fb-x2-Fik" secondAttribute="height" multiplier="2.6:1" id="g4J-8I-VtC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Custom Toast">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionButtonYellow:" destination="LGK-Nn-c6K" eventType="touchUpInside" id="IWG-ft-kb5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zag-ks-DVg">
+                                <rect key="frame" x="82" y="293" width="156" height="60"/>
+                                <color key="backgroundColor" red="0.24366211711281907" green="0.59536405295888317" blue="0.33408172404787995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zag-ks-DVg" secondAttribute="height" multiplier="2.6:1" id="rGt-iR-hyq"/>
+                                    <constraint firstAttribute="height" constant="60" id="uTd-VJ-WcM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Complete Toast">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionButtonGreen:" destination="LGK-Nn-c6K" eventType="touchUpInside" id="adQ-tk-wPT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6fb-x2-Fik" firstAttribute="centerY" secondItem="do0-G2-69p" secondAttribute="centerY" multiplier="0.82" id="LSq-WN-MSW"/>
+                            <constraint firstItem="6fb-x2-Fik" firstAttribute="top" secondItem="0Ut-rd-e2o" secondAttribute="bottom" constant="30" id="t0J-9h-qiq"/>
+                            <constraint firstItem="6fb-x2-Fik" firstAttribute="centerX" secondItem="do0-G2-69p" secondAttribute="centerX" id="uy0-D2-y4D"/>
+                            <constraint firstItem="0Ut-rd-e2o" firstAttribute="centerX" secondItem="do0-G2-69p" secondAttribute="centerX" id="v4P-FU-uHJ"/>
+                            <constraint firstItem="zag-ks-DVg" firstAttribute="top" secondItem="6fb-x2-Fik" secondAttribute="bottom" constant="30" id="wCw-MC-uQ2"/>
+                            <constraint firstItem="zag-ks-DVg" firstAttribute="centerX" secondItem="do0-G2-69p" secondAttribute="centerX" id="zBm-3e-iX6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="do0-G2-69p"/>
+                    </view>
+                    <connections>
+                        <outlet property="button_green" destination="zag-ks-DVg" id="rUV-wA-zjZ"/>
+                        <outlet property="button_red" destination="0Ut-rd-e2o" id="bKi-tR-pwp"/>
+                        <outlet property="button_yellow" destination="6fb-x2-Fik" id="IwU-uA-2yC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cre-gm-kIL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1110" y="534.50704225352115"/>
+        </scene>
     </scenes>
     <resources>
         <image name="chevron.right" catalog="system" width="46" height="64"/>

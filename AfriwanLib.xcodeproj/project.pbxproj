@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		622DE66122D1BCE0001E8928 /* ToastVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622DE66022D1BCE0001E8928 /* ToastVC.swift */; };
 		6252722122C9E3E700DAA627 /* LoadImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6252722022C9E3E700DAA627 /* LoadImageVC.swift */; };
 		6274697122C70A3C00A273A9 /* ConnectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6274697022C70A3C00A273A9 /* ConnectionVC.swift */; };
 		6274697322C71FEB00A273A9 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6274697222C71FEB00A273A9 /* MainVC.swift */; };
@@ -50,6 +51,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		622DE66022D1BCE0001E8928 /* ToastVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastVC.swift; sourceTree = "<group>"; };
 		6252722022C9E3E700DAA627 /* LoadImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadImageVC.swift; sourceTree = "<group>"; };
 		6274697022C70A3C00A273A9 /* ConnectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionVC.swift; sourceTree = "<group>"; };
 		6274697222C71FEB00A273A9 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				62FCCCBA22C355F800380E31 /* AnimationVC.swift */,
 				6274697022C70A3C00A273A9 /* ConnectionVC.swift */,
 				6252722022C9E3E700DAA627 /* LoadImageVC.swift */,
+				622DE66022D1BCE0001E8928 /* ToastVC.swift */,
 				62FCCCBC22C355F800380E31 /* Main.storyboard */,
 				62FCCCBF22C355FA00380E31 /* Assets.xcassets */,
 				62FCCCC122C355FA00380E31 /* LaunchScreen.storyboard */,
@@ -325,6 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				622DE66122D1BCE0001E8928 /* ToastVC.swift in Sources */,
 				62FCCCBB22C355F800380E31 /* AnimationVC.swift in Sources */,
 				6274697322C71FEB00A273A9 /* MainVC.swift in Sources */,
 				6252722122C9E3E700DAA627 /* LoadImageVC.swift in Sources */,

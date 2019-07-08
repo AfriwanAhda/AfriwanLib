@@ -10,7 +10,7 @@
 import UIKit
 
 class MainVC: UITableViewController {
-    var content = ["Animation and Round Corner", "Check Internet Connection", "Load Image"]
+    var content = ["Animation and Round Corner", "Check Internet Connection", "Load Image", "Dynamic Toast"]
     private var contentTitle: String?
     
     override func viewDidLoad() {
@@ -22,7 +22,7 @@ class MainVC: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 4
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -34,6 +34,7 @@ class MainVC: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         contentTitle = content[indexPath.row]
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
         switch indexPath.row {
         case 0:
             performSegue(withIdentifier: "segue_animation", sender: self)
@@ -41,6 +42,12 @@ class MainVC: UITableViewController {
             performSegue(withIdentifier: "segue_connection", sender: self)
         case 2:
             performSegue(withIdentifier: "segue_load_image", sender: self)
+        case 3:
+            let destinationVC = storyboard.instantiateViewController(withIdentifier: "ToastID") as! ToastVC
+            destinationVC.contentTitle = contentTitle
+            DispatchQueue.main.async {
+                self.navigationController?.pushViewController(destinationVC, animated: true)
+            }
         default: break
         }
     }
@@ -52,7 +59,7 @@ class MainVC: UITableViewController {
         } else if segue.identifier == "segue_connection" {
             let destination = segue.destination as! ConnectionVC
             destination.contentTitle = contentTitle
-        } else {
+        } else if segue.identifier == "segue_load_image" {
             let destination = segue.destination as! LoadImageVC
             destination.contentTitle = contentTitle
         }

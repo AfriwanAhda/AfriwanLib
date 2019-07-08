@@ -91,3 +91,34 @@ func MD5(string: String) -> Data {
     }
     return digestData
 }
+
+public func toast(message: String, view: UIView, duration: Double? = nil, textColor: UIColor? = nil,backgroundColor: UIColor? = nil, y: CGFloat? = nil, height: CGFloat? = nil, fontSize: CGFloat? = nil) {
+    let animation: UIView.AnimationOptions = .curveEaseOut
+    let y = view.frame.size.height - (y ?? 85)
+    let alpha = 0.0
+    let toastLabel: UILabel = UILabel()
+    toastLabel.textColor = textColor ?? UIColor.white
+    toastLabel.backgroundColor = backgroundColor ?? UIColor.darkGray
+    toastLabel.font = UIFont.systemFont(ofSize: fontSize ?? 17)
+    toastLabel.textAlignment = .center;
+    toastLabel.text = message
+    toastLabel.alpha = 1.0
+    toastLabel.clipsToBounds  =  true
+    toastLabel.layer.cornerRadius = 15;
+    toastLabel.sizeToFit()
+    toastLabel.numberOfLines = 0
+    let widthLabel = toastLabel.frame.width
+    let heightLabel = toastLabel.frame.height
+    var width = widthLabel + 30
+    let height = height ?? (heightLabel + 12)
+    if width > view.frame.width - 15 {
+        width = view.frame.width - 25
+    }
+    toastLabel.frame = CGRect(x: view.frame.size.width/2 - (width/2), y: y, width: width, height: height)
+    view.addSubview(toastLabel)
+    UIView.animate(withDuration: duration ?? 3.0, delay: 0.1, options: animation, animations: {
+        toastLabel.alpha = CGFloat(alpha)
+    }, completion: {(isCompleted) in
+        toastLabel.removeFromSuperview()
+    })
+}

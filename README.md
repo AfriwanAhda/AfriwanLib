@@ -1,10 +1,10 @@
 # One Library for All
-General library for iOS, iPadOS and macOS app. Load image, create animation, round corner of view/button, check internet connection easily with AfriwanLib. You can click the image for easy step to use this library.
+General library for iOS, iPadOS and macOS app. Load an image, create animation, round corner of view/button, check internet connection, etc easily with AfriwanLib. You can click the image below for easy step to use this library.
 
 [<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/loadimage.gif" width="281.1" height="500" alt="Load Image Link"/>](https://github.com/AfriwanAhda/AfriwanLib#--------load-image)
 [<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/animation.gif" width="281.1" height="500" alt="Animation Link"/>](https://github.com/AfriwanAhda/AfriwanLib#--------create-animation--round-corner)
 [<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/connection.gif" width="281.1" height="500" alt="Connection Link"/>](https://github.com/AfriwanAhda/AfriwanLib#--------check-internet-connection)
-
+[<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/toast.gif" width="281.1" height="500" alt="Toast Link"/>](https://github.com/AfriwanAhda/AfriwanLib#--------dynamic-toast)
 
 # How to use
 
@@ -71,8 +71,25 @@ resultText = "Connected"
 resultText = "Not Connected"
 }
 ```
+## [<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/toast.gif" width="28.1" height="50" alt="Toast Demo"/>](https://diponten.com)    &nbsp;&nbsp;    Dynamic Toast
 
+Simple toast:
+```groovy
+toast(message: "your message", view: self.view)
+```
 
+Custom toast with some parameter, example:
+```groovy
+toast(message: "This is Toast with parameter added:\ny (vertical position) and height", view: self.view, y: 145, height: 58)
+```
+
+// Complete toast with all parameter, example:
+```groovy
+toast(message: "Complete Toast with all parameter", view: view, duration: 5, textColor: UIColor.white, backgroundColor: UIColor.blue, y: 179, height: 32, fontSize: 16)
+```
+
+## Contributor
+Afriwan Ahda (afriwan.phys@gmail.com)
 
 # One Library for iOS, iPadOS, and macOS App
 

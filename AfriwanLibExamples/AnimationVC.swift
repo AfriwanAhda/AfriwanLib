@@ -28,7 +28,7 @@ class AnimationVC: UIViewController {
         // Simple round corner
         roundCorner(view: button_blue, cornerRadius: 15)
         
-        // Custom round corner with full parameter
+        // Custom round corner with all parameter
         roundCorner(view: view_green, cornerRadius: 30, shadowOpacity: 0.4, shadowRadius: 2.5, shadowOffset: CGSize.init(width: 1, height: 1), masksToBounds: false)
         
         // Custom round corner with some parameter, for this example I create circle view.
