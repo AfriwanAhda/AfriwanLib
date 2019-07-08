@@ -83,7 +83,7 @@ Custom toast with some parameter, example:
 toast(message: "This is Toast with parameter added:\ny (vertical position) and height", view: self.view, y: 145, height: 58)
 ```
 
-// Complete toast with all parameter, example:
+Complete toast with all parameter, example:
 ```groovy
 toast(message: "Complete Toast with all parameter", view: view, duration: 5, textColor: UIColor.white, backgroundColor: UIColor.blue, y: 179, height: 32, fontSize: 16)
 ```
