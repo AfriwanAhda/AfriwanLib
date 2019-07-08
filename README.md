@@ -71,7 +71,7 @@ resultText = "Connected"
 resultText = "Not Connected"
 }
 ```
-## [<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/toast.gif" width="28.1" height="50" alt="Toast Demo"/>](https://diponten.com/2019/07/08/toast/)    &nbsp;&nbsp;    Dynamic Toast
+## [<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/toast.gif" width="28.1" height="50" alt="Toast Demo" target= blank/>](https://diponten.com/2019/07/08/toast/)    &nbsp;&nbsp;    Dynamic Toast
 
 Simple toast:
 ```groovy
