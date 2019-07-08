@@ -71,9 +71,7 @@ resultText = "Connected"
 resultText = "Not Connected"
 }
 ```
-<!--## [<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/toast.gif" width="28.1" height="50" alt="Toast Demo"/>](https://diponten.com/2019/07/08/toast/)    &nbsp;&nbsp;    Dynamic Toast-->
-
-## <a href="https://apps.apple.com/id/developer/afriwan-ahda/id1330133888#see-all/i-phonei-pad-apps" target="_blank" rel="noreferrer noopener"><img src="https://diponten.com/wp-content/uploads/2018/11/appstore.png" alt="" class="wp-image-44" width="205" height="60"></a>
+## [<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/toast.gif" width="28.1" height="50" alt="Toast Demo"/>](https://diponten.com/2019/07/08/toast/)    &nbsp;&nbsp;    Dynamic Toast
 
 Simple toast:
 ```groovy
