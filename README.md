@@ -89,7 +89,7 @@ Complete toast with modify all parameter, example:
 ```groovy
 toast(message: "Complete Toast with all parameter", view: view, duration: 5, textColor: UIColor.white, backgroundColor: UIColor.blue, y: 179, height: 32, fontSize: 16)
 ```
-## [<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/crypto.gif" width="28.1" height="50" alt="Toast Demo"/>](https://diponten.com)    &nbsp;&nbsp;    Cryptographic Hash Function (SHA512)
+## [<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/crypto.gif" width="28.1" height="50" alt="Toast Demo"/>](https://diponten.com/2019/07/10/sha512/)    &nbsp;&nbsp;    Cryptographic Hash Function (SHA512)
 
 SHA512 is a cryptographic hash function that when applied to the provided input results in a 128-digit hexadecimal number that is highly unlikely to match the value produced for a different input. This function is implemented in some widely used security applications and protocols, including TLS and SSL, PGP, SSH, S/MIME, IPsec, save password, image caching, etc. Convert string value to SHA512 only with this function:
 ```groovy
