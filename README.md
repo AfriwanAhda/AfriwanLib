@@ -5,6 +5,7 @@ General library for iOS, iPadOS and macOS app. Load an image, create animation, 
 [<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/animation.gif" width="281.1" height="500" alt="Animation Link"/>](https://github.com/AfriwanAhda/AfriwanLib#--------create-animation--round-corner)
 [<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/connection.gif" width="281.1" height="500" alt="Connection Link"/>](https://github.com/AfriwanAhda/AfriwanLib#--------check-internet-connection)
 [<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/toast.gif" width="281.1" height="500" alt="Toast Link"/>](https://github.com/AfriwanAhda/AfriwanLib#--------dynamic-toast)
+[<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/crypto.gif" width="281.1" height="500" alt="Toast Link"/>](https://github.com/AfriwanAhda/AfriwanLib#--------cryptographic-hash-function-(SHA512))
 
 # How to use
 
@@ -87,6 +88,7 @@ Complete toast with modify all parameter, example:
 ```groovy
 toast(message: "Complete Toast with all parameter", view: view, duration: 5, textColor: UIColor.white, backgroundColor: UIColor.blue, y: 179, height: 32, fontSize: 16)
 ```
+## [<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/crypto.gif" width="28.1" height="50" alt="Toast Demo"/>](https://diponten.com)    &nbsp;&nbsp;    Cryptographic Hash Function (SHA512)
 
 # One Library for iOS, iPadOS, and macOS App
 
