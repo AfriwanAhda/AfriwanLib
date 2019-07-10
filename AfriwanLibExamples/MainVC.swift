@@ -10,7 +10,7 @@
 import UIKit
 
 class MainVC: UITableViewController {
-    var content = ["Animation and Round Corner", "Check Internet Connection", "Load Image", "Dynamic Toast"]
+    var content = ["Animation and Round Corner", "Check Internet Connection", "Load Image", "Dynamic Toast", "Cryptographic Hash Function"]
     private var contentTitle: String?
     
     override func viewDidLoad() {
@@ -22,7 +22,7 @@ class MainVC: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return 5
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -44,6 +44,12 @@ class MainVC: UITableViewController {
             performSegue(withIdentifier: "segue_load_image", sender: self)
         case 3:
             let destinationVC = storyboard.instantiateViewController(withIdentifier: "ToastID") as! ToastVC
+            destinationVC.contentTitle = contentTitle
+            DispatchQueue.main.async {
+                self.navigationController?.pushViewController(destinationVC, animated: true)
+            }
+        case 4:
+            let destinationVC = storyboard.instantiateViewController(withIdentifier: "CryptoID") as! CryptoVC
             destinationVC.contentTitle = contentTitle
             DispatchQueue.main.async {
                 self.navigationController?.pushViewController(destinationVC, animated: true)

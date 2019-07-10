@@ -8,8 +8,8 @@
 //
 
 import SystemConfiguration
-import var CommonCrypto.CC_MD5_DIGEST_LENGTH
-import func CommonCrypto.CC_MD5
+import var CommonCrypto.CC_SHA512_DIGEST_LENGTH
+import func CommonCrypto.CC_SHA512
 import typealias CommonCrypto.CC_LONG
 
 public func roundCorner(view: UIView, cornerRadius: CGFloat, shadowOpacity: Float? = nil, shadowRadius: CGFloat? = nil, shadowOffset: CGSize? = nil, masksToBounds: Bool? = nil) {
@@ -76,20 +76,13 @@ public func isConnectedToInternet() -> Bool {
     return ret
 }
 
-func MD5(string: String) -> Data {
-    let length = Int(CC_MD5_DIGEST_LENGTH)
-    let messageData = string.data(using:.utf8)!
-    var digestData = Data(count: length)
-    _ = digestData.withUnsafeMutableBytes { digestBytes -> UInt8 in
-        messageData.withUnsafeBytes { messageBytes -> UInt8 in
-            if let messageBytesBaseAddress = messageBytes.baseAddress, let digestBytesBlindMemory = digestBytes.bindMemory(to: UInt8.self).baseAddress {
-                let messageLength = CC_LONG(messageData.count)
-                CC_MD5(messageBytesBaseAddress, messageLength, digestBytesBlindMemory)
-            }
-            return 0
-        }
+public func sha512(string: String) -> String {
+    let data = string.data(using: .utf8) ?? Data()
+    var digest = [UInt8](repeating: 0, count: Int(CC_SHA512_DIGEST_LENGTH))
+    data.withUnsafeBytes {
+        _ = CC_SHA512($0.baseAddress, CC_LONG(data.count), &digest)
     }
-    return digestData
+    return digest.map({ String(format: "%02hhx", $0) }).joined(separator: "")
 }
 
 public func toast(message: String, view: UIView, duration: Double? = nil, textColor: UIColor? = nil,backgroundColor: UIColor? = nil, y: CGFloat? = nil, height: CGFloat? = nil, fontSize: CGFloat? = nil) {
