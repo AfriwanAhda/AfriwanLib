@@ -91,6 +91,11 @@ toast(message: "Complete Toast with all parameter", view: view, duration: 5, tex
 ```
 ## [<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/crypto.gif" width="28.1" height="50" alt="Toast Demo"/>](https://diponten.com)    &nbsp;&nbsp;    Cryptographic Hash Function (SHA512)
 
+SHA512 is a cryptographic hash function that when applied to the provided input results in a 128-digit hexadecimal number that is highly unlikely to match the value produced for a different input. 
+```groovy
+sha512(string: "the string")
+```
+
 # One Library for iOS, iPadOS, and macOS App
 
 The good news, beside iOS app, you can use this library for your iPadOS and macOS app too with Xcode 11, but don't worry with lower Xcode you still can use this library for your iOS app.
