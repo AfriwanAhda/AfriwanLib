@@ -4,9 +4,9 @@ General library for iOS, iPadOS and macOS app. Load an image, create animation, 
 [<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/loadimage.gif" width="281.1" height="500" alt="Load Image Link"/>](https://github.com/AfriwanAhda/AfriwanLib#--------load-image)
 [<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/animation.gif" width="281.1" height="500" alt="Animation Link"/>](https://github.com/AfriwanAhda/AfriwanLib#--------create-animation--round-corner)
 [<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/connection.gif" width="281.1" height="500" alt="Connection Link"/>](https://github.com/AfriwanAhda/AfriwanLib#--------check-internet-connection)
-<br>
+<br></br>
 [<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/toast.gif" width="281.1" height="500" alt="Toast Link"/>](https://github.com/AfriwanAhda/AfriwanLib#--------dynamic-toast)
-[<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/crypto.gif" width="281.1" height="500" alt="Toast Link"/>](https://github.com/AfriwanAhda/AfriwanLib#--------cryptographic-hash-function-(SHA512))
+[<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/crypto.gif" width="281.1" height="500" alt="Toast Link"/>](https://github.com/AfriwanAhda/AfriwanLib#--------cryptographic-hash-function-sha512)
 
 # How to use
 
