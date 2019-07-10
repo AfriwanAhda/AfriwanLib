@@ -93,7 +93,7 @@ toast(message: "Complete Toast with all parameter", view: view, duration: 5, tex
 
 SHA512 is a cryptographic hash function that when applied to the provided input results in a 128-digit hexadecimal number that is highly unlikely to match the value produced for a different input. 
 ```groovy
-sha512(string: "value")
+sha512(string: "value to convert")
 ```
 
 # One Library for iOS, iPadOS, and macOS App
