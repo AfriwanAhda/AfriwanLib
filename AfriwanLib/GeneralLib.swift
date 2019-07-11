@@ -13,7 +13,9 @@
 
 import SystemConfiguration
 import var CommonCrypto.CC_SHA512_DIGEST_LENGTH
+import var CommonCrypto.CC_SHA256_DIGEST_LENGTH
 import func CommonCrypto.CC_SHA512
+import func CommonCrypto.CC_SHA256
 import typealias CommonCrypto.CC_LONG
 
 public func roundCorner(view: UIView, cornerRadius: CGFloat, shadowOpacity: Float? = nil, shadowRadius: CGFloat? = nil, shadowOffset: CGSize? = nil, masksToBounds: Bool? = nil) {
@@ -80,8 +82,17 @@ public func isConnectedToInternet() -> Bool {
     return ret
 }
 
-public func sha512(string: String) -> String {
-    let data = string.data(using: .utf8) ?? Data()
+public func sha256(value: String) -> String {
+    let data = value.data(using: .utf8) ?? Data()
+    var digest = [UInt8](repeating: 0, count: Int(CC_SHA256_DIGEST_LENGTH))
+    data.withUnsafeBytes {
+        _ = CC_SHA256($0.baseAddress, CC_LONG(data.count), &digest)
+    }
+    return digest.map({ String(format: "%02hhx", $0) }).joined(separator: "")
+}
+
+public func sha512(value: String) -> String {
+    let data = value.data(using: .utf8) ?? Data()
     var digest = [UInt8](repeating: 0, count: Int(CC_SHA512_DIGEST_LENGTH))
     data.withUnsafeBytes {
         _ = CC_SHA512($0.baseAddress, CC_LONG(data.count), &digest)

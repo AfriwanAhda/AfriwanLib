@@ -15,7 +15,7 @@ extension UIImageView {
     
     public func loadImage(imageUrl url: String, backgroundImage: UIImage? = nil){
         DispatchQueue.main.async { self.image = backgroundImage }
-        let imageName = sha512(string: url)
+        let imageName = sha256(value: url)
         if let cachedImage = CacheManager.sharedInstance.getCachedImage(imageName: imageName) {
             DispatchQueue.main.async{ self.image = cachedImage }
             return
