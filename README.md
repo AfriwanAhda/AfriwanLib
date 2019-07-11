@@ -92,11 +92,45 @@ toast(message: "Complete Toast with all parameter", view: view, duration: 5, tex
 ```
 ## [<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/crypto.gif" width="28.1" height="50" alt="Crypto Demo"/>](https://diponten.com/2019/07/10/sha512/)    &nbsp;&nbsp;    Cryptographic Hash Function (SHA)
 
-SHA512 is a cryptographic hash function that when applied to the provided input results in a 128-digit hexadecimal number that is highly unlikely to match the value produced for a different input. This function is implemented in some widely used security applications and protocols, including TLS and SSL, PGP, SSH, S/MIME, IPsec, save password, image caching, etc. Convert string value to SHA512 only with this function:
+SHA512 is a cryptographic hash function that when applied to the provided input results in a 128-digit hexadecimal number that is highly unlikely to match the value produced for a different input. This function is implemented in some widely used security applications and protocols, including TLS and SSL, PGP, SSH, S/MIME, IPsec, save password, image caching, etc. Convert value to SHA512 only with this function:
 ```groovy
-sha512(string: "value to convert")
+sha512(value: "value to convert")
+```
+Convert value to SHA256:
+```groovy
+sha256(value: "value to convert")
 ```
 ## [<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/alert.gif" width="28.1" height="50" alt="Alert Demo"/>](https://diponten.com/)    &nbsp;&nbsp;    Alert & Sheet
+
+Simple alert:
+```groovy
+alert(title: "Simple Alert")
+```
+Custom alert:
+```groovy
+let yesAction = UIAlertAction(title: "Yes", style: .default) { (action) in
+toast(message: "Yes action", view: self.view)
+}
+let noAction = UIAlertAction(title: "No", style: .destructive) { (action) in
+toast(message: "No action", view: self.view)
+}
+alert(title: "Alert", message: "Custom alert", actions: [yesAction, noAction])
+```
+
+Simple sheet:
+```groovy
+alert(title: "Simple Sheet", style: .actionSheet)
+```
+Custom sheet:
+```groovy
+let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (action) in
+toast(message: "Cancel action", view: self.view)
+}
+let deleteAction = UIAlertAction(title: "Delete", style: .destructive) { (action) in
+toast(message: "Delete action", view: self.view)
+}
+alert(title: "Are you sure?", message: "You can not undo this action", actions: [cancelAction, deleteAction], style: .actionSheet)
+```
 
 # One Library for iOS, iPadOS, and macOS App
 
