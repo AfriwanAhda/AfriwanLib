@@ -19,11 +19,11 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3A-UL-thk">
                                 <rect key="frame" x="30" y="269" width="260" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.55578389179571808" green="0.83685255048570395" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.19978044207312523" green="0.45481035099155004" blue="0.46349051761143101" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k3A-UL-thk" secondAttribute="trailing" constant="30" id="0eT-b0-DEp"/>
                             <constraint firstItem="k3A-UL-thk" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="8sJ-cZ-bOn"/>

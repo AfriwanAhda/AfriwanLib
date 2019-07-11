@@ -10,7 +10,7 @@
 import UIKit
 
 class MainVC: UITableViewController {
-    var content = ["Animation and Round Corner", "Check Internet Connection", "Load Image", "Dynamic Toast", "Cryptographic Hash Function"]
+    var content = ["Animation and Round Corner", "Check Internet Connection", "Load Image", "Dynamic Toast", "Cryptographic Hash Function", "Alert & Sheet"]
     private var contentTitle: String?
     
     override func viewDidLoad() {
@@ -22,7 +22,7 @@ class MainVC: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 6
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -50,6 +50,12 @@ class MainVC: UITableViewController {
             }
         case 4:
             let destinationVC = storyboard.instantiateViewController(withIdentifier: "CryptoID") as! CryptoVC
+            destinationVC.contentTitle = contentTitle
+            DispatchQueue.main.async {
+                self.navigationController?.pushViewController(destinationVC, animated: true)
+            }
+        case 5:
+            let destinationVC = storyboard.instantiateViewController(withIdentifier: "AlertID") as! AlertVC
             destinationVC.contentTitle = contentTitle
             DispatchQueue.main.async {
                 self.navigationController?.pushViewController(destinationVC, animated: true)

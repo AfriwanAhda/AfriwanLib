@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "AfriwanLib"
-  spec.version      = "0.9"
+  spec.version      = "1.0"
   spec.summary      = "General CocoaPods library written in Swift"
 
   # This description is used to generate tags and improve search results.
@@ -40,7 +40,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.license      = "MIT (example)"
-  spec.license      = { :type => "MIT", :file => "LICENSE.txt" }
+  spec.license      = { :type => "", :file => "LICENSE.txt" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

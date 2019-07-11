@@ -16,6 +16,8 @@
 		628B6A5222C4AEA3002DAA49 /* AfriwanLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 62FCCC8222C3548D00380E31 /* AfriwanLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		628EA73D22C9BFC400EDB995 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628EA73C22C9BFC400EDB995 /* CacheManager.swift */; };
 		628EA73F22C9C15F00EDB995 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628EA73E22C9C15F00EDB995 /* UIImageView.swift */; };
+		62E6197822D6F37800882AE0 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E6197722D6F37700882AE0 /* UIViewController.swift */; };
+		62E6197A22D70E6600882AE0 /* AlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E6197922D70E6600882AE0 /* AlertVC.swift */; };
 		62FCCC8C22C3548D00380E31 /* AfriwanLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62FCCC8222C3548D00380E31 /* AfriwanLib.framework */; };
 		62FCCC9122C3548D00380E31 /* AfriwanLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCCC9022C3548D00380E31 /* AfriwanLibTests.swift */; };
 		62FCCC9322C3548D00380E31 /* AfriwanLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 62FCCC8522C3548D00380E31 /* AfriwanLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -60,6 +62,8 @@
 		628EA73C22C9BFC400EDB995 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		628EA73E22C9C15F00EDB995 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		62B4A58622C8DE0E003B342C /* AfriwanLibExamples.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AfriwanLibExamples.entitlements; sourceTree = "<group>"; };
+		62E6197722D6F37700882AE0 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		62E6197922D70E6600882AE0 /* AlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertVC.swift; sourceTree = "<group>"; };
 		62FCCC8222C3548D00380E31 /* AfriwanLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AfriwanLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62FCCC8522C3548D00380E31 /* AfriwanLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AfriwanLib.h; sourceTree = "<group>"; };
 		62FCCC8622C3548D00380E31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -139,6 +143,7 @@
 				62FCCCC822C35B8A00380E31 /* GeneralLib.swift */,
 				628EA73C22C9BFC400EDB995 /* CacheManager.swift */,
 				628EA73E22C9C15F00EDB995 /* UIImageView.swift */,
+				62E6197722D6F37700882AE0 /* UIViewController.swift */,
 			);
 			path = AfriwanLib;
 			sourceTree = "<group>";
@@ -157,13 +162,14 @@
 			children = (
 				62B4A58622C8DE0E003B342C /* AfriwanLibExamples.entitlements */,
 				62FCCCB822C355F800380E31 /* AppDelegate.swift */,
+				62FCCCBC22C355F800380E31 /* Main.storyboard */,
 				6274697222C71FEB00A273A9 /* MainVC.swift */,
 				62FCCCBA22C355F800380E31 /* AnimationVC.swift */,
 				6274697022C70A3C00A273A9 /* ConnectionVC.swift */,
 				6252722022C9E3E700DAA627 /* LoadImageVC.swift */,
 				622DE66022D1BCE0001E8928 /* ToastVC.swift */,
 				622469EA22D3513E001CC2EE /* CryptoVC.swift */,
-				62FCCCBC22C355F800380E31 /* Main.storyboard */,
+				62E6197922D70E6600882AE0 /* AlertVC.swift */,
 				62FCCCBF22C355FA00380E31 /* Assets.xcassets */,
 				62FCCCC122C355FA00380E31 /* LaunchScreen.storyboard */,
 				62FCCCC422C355FA00380E31 /* Info.plist */,
@@ -315,6 +321,7 @@
 			files = (
 				628EA73D22C9BFC400EDB995 /* CacheManager.swift in Sources */,
 				628EA73F22C9C15F00EDB995 /* UIImageView.swift in Sources */,
+				62E6197822D6F37800882AE0 /* UIViewController.swift in Sources */,
 				62FCCCC922C35B8A00380E31 /* GeneralLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				622DE66122D1BCE0001E8928 /* ToastVC.swift in Sources */,
+				62E6197A22D70E6600882AE0 /* AlertVC.swift in Sources */,
 				622469EB22D3513E001CC2EE /* CryptoVC.swift in Sources */,
 				62FCCCBB22C355F800380E31 /* AnimationVC.swift in Sources */,
 				6274697322C71FEB00A273A9 /* MainVC.swift in Sources */,
