@@ -6,7 +6,8 @@ General library for iOS, iPadOS and macOS app. Load an image, create animation, 
 [<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/connection.gif" width="281.1" height="500" alt="Connection Link"/>](https://github.com/AfriwanAhda/AfriwanLib#--------check-internet-connection)
 <br></br>
 [<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/toast.gif" width="281.1" height="500" alt="Toast Link"/>](https://github.com/AfriwanAhda/AfriwanLib#--------dynamic-toast)
-[<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/crypto.gif" width="281.1" height="500" alt="Crypto Link"/>](https://github.com/AfriwanAhda/AfriwanLib#--------cryptographic-hash-function-sha512)
+[<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/crypto.gif" width="281.1" height="500" alt="Crypto Link"/>](https://github.com/AfriwanAhda/AfriwanLib#--------cryptographic-hash-function)
+[<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/alert.gif" width="281.1" height="500" alt="Alert Link"/>](https://github.com/AfriwanAhda/AfriwanLib#--------cryptographic-hash-function-sha512)
 
 # How to use
 
@@ -89,12 +90,13 @@ Complete toast with modify all parameter, example:
 ```groovy
 toast(message: "Complete Toast with all parameter", view: view, duration: 5, textColor: UIColor.white, backgroundColor: UIColor.blue, y: 179, height: 32, fontSize: 16)
 ```
-## [<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/crypto.gif" width="28.1" height="50" alt="Toast Demo"/>](https://diponten.com/2019/07/10/sha512/)    &nbsp;&nbsp;    Cryptographic Hash Function (SHA512)
+## [<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/crypto.gif" width="28.1" height="50" alt="Crypto Demo"/>](https://diponten.com/2019/07/10/sha512/)    &nbsp;&nbsp;    Cryptographic Hash Function
 
 SHA512 is a cryptographic hash function that when applied to the provided input results in a 128-digit hexadecimal number that is highly unlikely to match the value produced for a different input. This function is implemented in some widely used security applications and protocols, including TLS and SSL, PGP, SSH, S/MIME, IPsec, save password, image caching, etc. Convert string value to SHA512 only with this function:
 ```groovy
 sha512(string: "value to convert")
 ```
+## [<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/alert.gif" width="28.1" height="50" alt="Alert Demo"/>](https://diponten.com/)    &nbsp;&nbsp;    Alert & Sheet
 
 # One Library for iOS, iPadOS, and macOS App
 
