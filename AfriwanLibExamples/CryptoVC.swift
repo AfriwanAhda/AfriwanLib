@@ -47,9 +47,11 @@ class CryptoVC: UIViewController {
             lb_output.isHidden = false
             if isSHA256 {
                 lb_output.text = "Output SHA-256:"
+                // Convert to SHA-256
                 lb_result.text = sha256(value: value)
             } else {
                 lb_output.text = "Output SHA-512:"
+                // Convert to SHA-512
                 lb_result.text = sha512(value: value)
             }
         } else {
