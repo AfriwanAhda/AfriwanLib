@@ -90,7 +90,7 @@ Complete toast with modify all parameter, example:
 ```groovy
 toast(message: "Complete Toast with all parameter", view: view, duration: 5, textColor: UIColor.white, backgroundColor: UIColor.blue, y: 179, height: 32, fontSize: 16)
 ```
-## [<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/crypto.gif" width="28.1" height="50" alt="Crypto Demo"/>](https://diponten.com/2019/07/10/sha512/)    &nbsp;&nbsp;    Cryptographic Hash Function (SHA)
+## [<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/crypto.gif" width="28.1" height="50" alt="Crypto Demo"/>](https://diponten.com/2019/07/10/sha/)    &nbsp;&nbsp;    Cryptographic Hash Function (SHA)
 
 The SHA (Secure Hash Algorithm) is one of a number of cryptographic hash functions. A cryptographic hash is like a signature for a text or a data file. Hash is a one way function – it cannot be decrypted back. It's implemented in some widely used security applications and protocols, including TLS and SSL, PGP, SSH, S/MIME, IPsec, image caching. Moreover, this makes it suitable for password validation, challenge hash authentication, anti-tamper, digital signatures, etc.
 SHA-256 algorithm generates an almost-unique, fixed size 256-bit (32-byte) hash. Convert value to SHA-256:
