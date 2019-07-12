@@ -92,14 +92,17 @@ toast(message: "Complete Toast with all parameter", view: view, duration: 5, tex
 ```
 ## [<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/crypto.gif" width="28.1" height="50" alt="Crypto Demo"/>](https://diponten.com/2019/07/10/sha512/)    &nbsp;&nbsp;    Cryptographic Hash Function (SHA)
 
-SHA512 is a cryptographic hash function that when applied to the provided input results in a 128-digit hexadecimal number that is highly unlikely to match the value produced for a different input. This function is implemented in some widely used security applications and protocols, including TLS and SSL, PGP, SSH, S/MIME, IPsec, save password, image caching, etc. Convert value to SHA512 only with this function:
-```groovy
-sha512(value: "value to convert")
-```
+The SHA (Secure Hash Algorithm) is one of a number of cryptographic hash functions. A cryptographic hash is like a signature for a text or a data file. SHA-256 algorithm generates an almost-unique, fixed size 256-bit (32-byte) hash. Hash is a one way function – it cannot be decrypted back. This makes it suitable for password validation, challenge hash authentication, anti-tamper, digital signatures.
 Convert value to SHA256:
 ```groovy
 sha256(value: "value to convert")
 ```
+SHA512 is a cryptographic hash function that when applied to the provided input results in a 128-digit hexadecimal number that is highly unlikely to match the value produced for a different input.
+Convert value to SHA512 only with this function:
+```groovy
+sha512(value: "value to convert")
+```
+SHA function is implemented in some widely used security applications and protocols, including TLS and SSL, PGP, SSH, S/MIME, IPsec, save password, image caching, etc.
 ## [<img src="https://github.com/AfriwanAhda/FileDemo/blob/master/alert.gif" width="28.1" height="50" alt="Alert Demo"/>](https://diponten.com/)    &nbsp;&nbsp;    Alert & Sheet
 
 Simple alert:
