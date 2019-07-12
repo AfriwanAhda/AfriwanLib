@@ -97,7 +97,7 @@ SHA-256 algorithm generates an almost-unique, fixed size 256-bit (32-byte) hash.
 ```groovy
 sha256(value: "value to convert")
 ```
-SHA512 is a cryptographic hash function that when applied to the provided input results in a 128-digit hexadecimal number that is highly unlikely to match the value produced for a different input. Convert value to SHA512 only with this function:
+SHA-512 is a cryptographic hash function that when applied to the provided input results in a 128-digit hexadecimal number that is highly unlikely to match the value produced for a different input. Convert value to SHA512 only with this function:
 ```groovy
 sha512(value: "value to convert")
 ```
